@@ -1,0 +1,69 @@
+@import url("/home/tushar/.cache/wal/colors-waybar.css");
+
+* {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: @background;
+}
+
+#workspaces button.active {
+  color: @foreground;
+}
+
+#workspaces {
+  background-color: @background;
+  padding: 0 5.6px 0 0;
+}
+
+.modules-left {
+  margin-left: 5px;
+}
+
+.modules-right {
+  margin-right: 0px;
+}
+
+#battery,
+#pulseaudio,
+#backlight,
+#custom-weather {
+  color: @color5; /* color5 */
+  background-color: @background; /* background */
+  margin: 0 15px 0 0px;
+  padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+
+#network {
+  color: @color2; /* color2 */
+  background-color: @background; /* background */
+  margin: 0 0px 0 0px;
+  padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+
+#clock {
+  color: @color3; /* color3 */
+  background-color: @background; /* background */
+  margin: 0 15px 0 0;
+  padding: 0 15px 0 15px;
+}
+
+#tray {
+  color: @color3;
+  background-color: @background;
+  margin: 0 6px 0 0;
+  padding: 0 15px 0 15px;
+}
+
+#pulseaudio {
+  color: @color5; /* color5 */
+}
+
+#backlight {
+  color: @color5; /* color5 */
+}

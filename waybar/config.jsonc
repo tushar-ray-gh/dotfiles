@@ -1,0 +1,71 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 5,
+  "modules-left": ["clock"],
+  "modules-center": ["hyprland/workspaces", "custom/media"],
+  "modules-right": ["pulseaudio", "battery", "backlight", "tray"],
+
+
+  "battery": {
+    "format": "{icon}  {capacity}%",
+    "format-charging": "󰂄  {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+
+  "clock": {
+    "format": "󰥔   {:%I:%M %p}",
+    "format-alt": "󰥔   {:%a, %d. %b  %I:%M %p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "󰂱  {volume}%",
+    "format-muted": "󰖁",
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+    "format-icons": {
+      "headphone": "  ",
+      "hands-free": " ",
+      "headset": "󰋎 ",
+      "phone": " ",
+      "portable": " ",
+      "car": "",
+      "default": ["󰖀", "󰕾"]
+    }
+  },
+
+  "network": {
+    "interface": "wlo1",
+    "format": "{ifname}",
+    "format-wifi": "{icon}   {essid}",
+    "format-ethernet": "󰈀   {ipaddr}/{cidr}",
+    "format-disconnected": "󰤭   disconnected",
+    "max-length": 50,
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "urgent": "󰀨",
+      "active": "",
+      "default": ""
+    },
+
+    "sort-by-number": true
+  },
+
+  "backlight": {
+    "format": "{icon}   {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"]
+  },
+
+  "tray": {
+    "spacing": 10
+  }
+
+}
