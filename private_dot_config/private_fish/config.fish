@@ -16,13 +16,13 @@ alias s="paru -Ss"
 alias ps="pacman -Ss"
 alias r='paru -R'
 alias cd='z'
-alias c='cd ~/.config/'
 alias ff='fastfetch'
 alias ca="chezmoi add"
 alias ce="chezmoi edit"
 alias ga="git add ."
-alias gc="git commit"
+alias gc="git commit -m"
 alias gp="git push -u origin main"
+alias c="clear"
 
 # Handy change dir shortcuts
 abbr .. 'cd ..'
