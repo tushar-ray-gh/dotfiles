@@ -27,4 +27,4 @@ chezmoi diff
 chezmoi -v apply
 ```
 
-- And Done Enjoy your setup
+- And done enjoy your setup!
