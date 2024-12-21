@@ -19,10 +19,17 @@ alias cd='z'
 alias ff='fastfetch'
 alias ca="chezmoi add"
 alias ce="chezmoi edit"
+alias cdi="chezmoi diff"
+alias cva="chezmoi -v apply"
 alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push -u origin main"
 alias c="clear"
+alias t="tmux"
+alias ta="tmux attach"
+alias tl="tmux ls"
+alias tk="tmux kill-server"
+alias zl="zellij --layout compact"
 
 # Handy change dir shortcuts
 abbr .. 'cd ..'
@@ -36,7 +43,7 @@ set -U fish_user_paths /home/tushar/.local/bin/ $fish_user_paths
 
 
 # Add dotfiles to fzf.fish
-set fzf_fd_opts --hidden
+#set fzf_fd_opts --hidden
 
 # Search Directory in fzf.fish open the current file in neovim
 set fzf_directory_opts --bind "ctrl-o:execute(nvim {} &> /dev/tty)"
